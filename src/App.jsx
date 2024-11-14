@@ -20,5 +20,5 @@ export default function Board() {
   );
 }
 function Square({ value }) {
-  return <button className="square">1</button>;
+  return <button className="square">{value}</button>;
 }

@@ -19,6 +19,6 @@ export default function Board() {
     </>
   );
 }
-function Square() {
+function Square({ value }) {
   return <button className="square">1</button>;
 }

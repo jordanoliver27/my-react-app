@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 export default function Board() {
   return (
     <>
@@ -19,7 +21,9 @@ export default function Board() {
     </>
   );
 }
-function Square({ value }) {
+function Square() {
+  const [value, setValue] = useState(null);
+
   function handleClick() {
     console.log('clicked!');
   }
